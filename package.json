@@ -1,6 +1,6 @@
 {
   "name": "remotion-animated-root",
-  "private": true,
+  "version": "1.0",
   "workspaces": [
     "sites/*",
     "packages/*"
