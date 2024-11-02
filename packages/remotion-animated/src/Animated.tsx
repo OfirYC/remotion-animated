@@ -58,6 +58,9 @@ const Animated = (props: AnimatedProps) => {
     return null;
   }
 
+  if (props.style?.transform && animatedStyles.transform) {
+    animatedStyles.transform += ' ' + props.style.transform;
+  }
   return (
     <div
       className={props.className}
