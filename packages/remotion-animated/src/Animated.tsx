@@ -62,9 +62,9 @@ const Animated = (props: AnimatedProps) => {
     <div
       className={props.className}
       style={{
+        position: props.absolute ? 'absolute' : undefined,
         ...props.style,
         ...animatedStyles,
-        position: props.absolute ? 'absolute' : undefined,
       }}
     >
       {props.children}
